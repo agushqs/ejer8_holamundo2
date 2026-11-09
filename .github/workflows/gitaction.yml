@@ -14,4 +14,4 @@ jobs:
       run: javac src/hola.java
       
     - name: ejecutar_java
-      run: java -cp src/hola.java
+      run: java src/hola.java
