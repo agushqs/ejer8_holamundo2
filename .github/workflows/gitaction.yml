@@ -1,0 +1,17 @@
+name: Ejecutar Java
+
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  ejecutar_java:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: compilar_java
+      run: javac src/hola.java
+      
+    - name: ejecutar_java
+      run: java -cp src/hola.java
